@@ -1,0 +1,71 @@
+.App {
+  background-color: black;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #1F1F1F;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.card:hover {
+  transform: translateY(-10px) scale(1.02); /* Lifts and slightly zooms */
+  box-shadow: 0 10px 20px ; /* Deepens the shadow */
+}
+
+/* Add-to-cart and purchase button styles */
+.btn-cart,
+.btn-purchase {
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+
+.btn-cart:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 6px 18px rgba(57,255,20,0.14);
+  background-color: rgba(57,255,20,0.06);
+  color: #39ff14;
+}
+
+.btn-purchase:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 6px 18px rgba(57,255,20,0.14);
+  background-color: rgba(57,255,20,0.08);
+  color: #39ff14;
+}
+
+/* Slight focus style for accessibility */
+.btn-cart:focus,
+.btn-purchase:focus {
+  outline: 2px solid rgba(57,255,20,0.25);
+  outline-offset: 2px;
+}
