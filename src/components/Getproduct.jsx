@@ -17,7 +17,7 @@ const Getproduct = () => {
   const [searchTerm, setSearchTerm] = useState("")
   const [showSearch, setShowSearch] = useState(false)
 
-  const imagepath = "http://murayambuni.alwaysdata.net/static/images/"
+  const imagepath = "https://murayambuni.alwaysdata.net/static/images/"
 
   // fetch products
   const getproducts = async () => {
