@@ -24,7 +24,7 @@ const Getproduct = () => {
     setLoading("Please Wait...")
     try {
       const response = await axios.get(
-        "http://murayambuni.alwaysdata.net/api/getproducts"
+        "https://murayambuni.alwaysdata.net/api/getproducts"
       )
       setProducts(response.data)
       setLoading("")
