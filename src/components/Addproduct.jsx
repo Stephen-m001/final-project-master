@@ -8,6 +8,7 @@ const Addproduct = () => {
   const [product_description, setProductDescription] = useState("")
   const [cost, setCost] = useState("")
   const [product_photo , setProductPhoto] = useState("")
+  const [category, setCategory] = useState("")
 
   // define three states for posting data 
   const [loading, setLoading] = useState("")
@@ -54,6 +55,8 @@ const Addproduct = () => {
           <input id='dp' type="text" className="form-control" onChange={(e) => setProductDescription(e.target.value)}/><br />
           <label for="ct">cost (Ksh)</label>
           <input id='ct' type="number" className="form-control" onChange={(e) => setCost(e.target.value)} /><br />
+          <label for="cate">Category</label>
+          <input id='cate' type="text" className="form-control" onChange={(e) => setCategory(e.target.value)} /><br />
           <label for="ph">Product Photo</label>
           <input  id='ph' type="file" accept='image/*' className="form-control" onChange={(e) => setProductPhoto(e.target.files[0])}/><br />
           <button className='btn btn-success w-100' type='submit'>Add Product</button>
