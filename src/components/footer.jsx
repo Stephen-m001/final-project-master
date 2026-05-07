@@ -47,17 +47,17 @@ return(
         <div className="col-md-3">
           <h2 className="text-center ">~Stay Connected~</h2>
 
-          <a href="#">
-            <img src="images/download.png" alt="Facebook" width="48" className="bg-success rounded me-2" />
-          </a>
+          <button aria-label="Facebook" className="btn p-0 me-2" style={{background:'none', border:'none'}}>
+            <img src="images/download.png" alt="Facebook" width="48" className="bg-success rounded" />
+          </button>
 
-          <a href="#">
-            <img src="images/Instagram_Glyph_Black.png" alt="Instagram" width="48" className="me-2" />
-          </a>
+          <button aria-label="Instagram" className="btn p-0 me-2" style={{background:'none', border:'none'}}>
+            <img src="images/Instagram_Glyph_Black.png" alt="Instagram" width="48" />
+          </button>
 
-          <a href="#">
+          <button aria-label="X" className="btn p-0" style={{background:'none', border:'none'}}>
             <img src="images/x.png" alt="X" width="48" />
-          </a>
+          </button>
 
           <p className="mt-2">
             Follow us on our social media handles so that you don't miss out on our new offers and promotions.
