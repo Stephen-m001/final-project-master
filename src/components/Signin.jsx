@@ -26,7 +26,7 @@ const Signin = () => {
 
     try {
       const response = await axios.post(
-        "http://murayambuni.alwaysdata.net/api/signin",
+        "https://murayambuni.alwaysdata.net/api/signin",
         formdata
       )
 
